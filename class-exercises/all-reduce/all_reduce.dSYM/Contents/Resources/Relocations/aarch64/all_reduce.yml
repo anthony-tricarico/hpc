@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     ring
+binary-path:     all_reduce
 relocations:     []
 ...

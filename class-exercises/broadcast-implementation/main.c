@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
      * The asymptotic time complexity is O(n) since process 0 needs to send 
      * a message to all other (n-1) processes. */
     #ifdef ZERO_PROCESS
-    int p = 0;      /* process p set to process 0 */
+    const int p = 0;      /* process p set to process 0 */
 
     if (rnk == p) {
         printf("Enter message: ");
