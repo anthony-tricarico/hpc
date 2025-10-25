@@ -57,7 +57,7 @@ int main(void) {
             // record time elapsed in seconds
             time_elapsed = (time_end->tv_sec - time->tv_sec) + ((time_end->tv_usec - time->tv_usec) / 1000000.0);
             // compute MBs per second
-            mbs = n / (time_elapsed * 10e6);
+            mbs = n / (time_elapsed * 1e6);
             // print everything nicely formatted
             printf("%lu\t\t%10.6f\t\t%10.6f\n", n, time_elapsed, mbs);
             // deallocate memory at the end of each iteration
