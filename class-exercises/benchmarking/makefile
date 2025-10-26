@@ -1,4 +1,4 @@
 main: main.c get_time.c get_time.h
-	mpicc main.c get_time.c -o benchmark
+	mpicc main.c get_time.c -std=gnu99 -o benchmark
 test-time: get_time.c get_time.h
 	gcc get_time.c -D TEST
